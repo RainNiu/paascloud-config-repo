@@ -4,11 +4,10 @@ server:
     remote-ip-header: x-forwarded-for
   use-forward-headers: true
 
-management:
-  security:
-    enabled: false
-
 spring:
+  management:
+    security:
+      enabled: false
   aop:
     proxy-target-class: true
     auto: true
@@ -40,8 +39,8 @@ spring:
         login-password: admin
   mail:
     host: smtp.163.com
-    username: paascloudTest@163.com
-    password: a123456
+    username: niuyu107@163.com
+    password: yu107516*
     port: 465
     protocol: smtp
     test-connection: false
