@@ -3,12 +3,11 @@ spring:
     cache-names: tpc-cache
   datasource:
     url: jdbc:mysql://paascloud-db-mysql:3306/paascloud_tpc?characterEncoding=utf8&useSSL=false
-
-liquibase:
-  change-log: classpath:liquibase/index.xml
-  user: ${spring.datasource.username}
-  password: ${spring.datasource.password}
-  url: ${spring.datasource.url}
+  liquibase:
+    change-log: classpath:liquibase/index.xml
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    url: ${spring.datasource.url}
 
 mybatis:
   type-aliases-package: com.paascloud.provider.model.domain

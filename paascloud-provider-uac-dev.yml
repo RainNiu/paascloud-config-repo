@@ -6,7 +6,11 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
   datasource:
     url: jdbc:mysql://paascloud-db-mysql:3306/paascloud_uac?characterEncoding=utf8&useSSL=false
-
+  liquibase:
+    change-log: classpath:liquibase/index.xml
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    url: ${spring.datasource.url}
 mybatis:
   type-aliases-package: com.paascloud.provider.model.domain
   mapper-locations: classpath:mapper/*.xml,classpath*:sdk/mapper/*.xml
@@ -24,12 +28,6 @@ pagehelper:
   supportMethodsArguments: true
   params: count=countSql
 
-liquibase:
-  change-log: classpath:liquibase/index.xml
-  user: ${spring.datasource.username}
-  password: ${spring.datasource.password}
-  url: ${spring.datasource.url}
-
 security:
   oauth2:
     client:
@@ -39,7 +37,7 @@ security:
       user-authorization-uri: http://paascloud-gateway:7979/uac/oauth/authorize
     resource:
       id: paascloud-resource-uac
-      filter-order: 3
+#      filter-order: 3 5.x不再支持
 
 paascloud:
   enableSqlLogInterceptor: false
