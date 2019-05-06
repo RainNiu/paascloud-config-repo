@@ -4,10 +4,11 @@ spring:
       force: true
       charset: UTF-8
       enabled: true
-    multipart:
-      enabled: true
-      max-request-size: 50MB
-      max-file-size: 50MB
+    servlet:
+      multipart:
+        enabled: true
+        max-request-size: 50MB
+        max-file-size: 50MB
   mvc:
     date-format: yyyy-MM-dd HH:mm:ss
   jackson:
