@@ -30,7 +30,7 @@ security:
   oauth2:
     client:
       clientId: paascloud-client-tpc
-      clientSecret: paascloudClientSecret
+      clientSecret: $2a$10$b7Ey09KN.UDlMVQePJbBQeJF2fBNmhHCdrc0zChzgkT/VBSnlnerS
       access-token-uri: http://paascloud-gateway:7979/uac/oauth/token
       user-authorization-uri: http://paascloud-gateway:7979/uac/oauth/authorize
     resource:

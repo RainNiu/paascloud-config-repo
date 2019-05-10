@@ -32,7 +32,7 @@ security:
   oauth2:
     client:
       clientId: paascloud-client-uac
-      clientSecret: paascloudClientSecret
+      clientSecret: $2a$10$b7Ey09KN.UDlMVQePJbBQeJF2fBNmhHCdrc0zChzgkT/VBSnlnerS
       access-token-uri: http://paascloud-gateway:7979/uac/oauth/token
       user-authorization-uri: http://paascloud-gateway:7979/uac/oauth/authorize
     resource:
@@ -89,41 +89,41 @@ paascloud:
       tokenStore: jwt
       clients[0]:
         clientId: paascloud-client-uac
-        clientSecret: paascloudClientSecret
+        clientSecret: $2a$10$b7Ey09KN.UDlMVQePJbBQeJF2fBNmhHCdrc0zChzgkT/VBSnlnerS
         accessTokenValidateSeconds: 7200
         scope: "*"
       clients[1]:
         clientId: paascloud-browser
-        clientSecret: paascloudClientSecret
+        clientSecret: $2a$10$b7Ey09KN.UDlMVQePJbBQeJF2fBNmhHCdrc0zChzgkT/VBSnlnerS
         accessTokenValidateSeconds: 7200
         scope: "*"
       clients[2]:
         clientId: paascloud-client-gateway
-        clientSecret: paascloudClientSecret
+        clientSecret: $2a$10$b7Ey09KN.UDlMVQePJbBQeJF2fBNmhHCdrc0zChzgkT/VBSnlnerS
         accessTokenValidateSeconds: 7200
         scope: "*"
       clients[3]:
         clientId: paascloud-client-zipkin
-        clientSecret: paascloudClientSecret
+        clientSecret: $2a$10$b7Ey09KN.UDlMVQePJbBQeJF2fBNmhHCdrc0zChzgkT/VBSnlnerS
         accessTokenValidateSeconds: 7200
         scope: "*"
       clients[4]:
         clientId: paascloud-client-mdc
-        clientSecret: paascloudClientSecret
+        clientSecret: $2a$10$b7Ey09KN.UDlMVQePJbBQeJF2fBNmhHCdrc0zChzgkT/VBSnlnerS
         accessTokenValidateSeconds: 7200
         scope: "*"
       clients[5]:
         clientId: paascloud-client-omc
-        clientSecret: paascloudClientSecret
+        clientSecret: $2a$10$b7Ey09KN.UDlMVQePJbBQeJF2fBNmhHCdrc0zChzgkT/VBSnlnerS
         accessTokenValidateSeconds: 7200
         scope: "*"
       clients[6]:
         clientId: paascloud-client-opc
-        clientSecret: paascloudClientSecret
+        clientSecret: $2a$10$b7Ey09KN.UDlMVQePJbBQeJF2fBNmhHCdrc0zChzgkT/VBSnlnerS
         accessTokenValidateSeconds: 7200
         scope: "*"
       clients[7]:
         clientId: paascloud-client-tpc
-        clientSecret: paascloudClientSecret
+        clientSecret: $2a$10$b7Ey09KN.UDlMVQePJbBQeJF2fBNmhHCdrc0zChzgkT/VBSnlnerS
         accessTokenValidateSeconds: 7200
         scope: "*"
