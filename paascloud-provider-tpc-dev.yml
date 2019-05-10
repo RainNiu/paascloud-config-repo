@@ -29,11 +29,12 @@ pagehelper:
 security:
   oauth2:
     client:
-      clientId: paascloud-client-mdc
+      clientId: paascloud-client-tpc
       clientSecret: paascloudClientSecret
       access-token-uri: http://paascloud-gateway:7979/uac/oauth/token
       user-authorization-uri: http://paascloud-gateway:7979/uac/oauth/authorize
     resource:
+      id: paascloud-client-tpc
       user-info-uri: http://paascloud-gateway:7979/uac/user
       prefer-token-info: false
       jwt:
