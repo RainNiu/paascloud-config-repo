@@ -52,8 +52,6 @@ security:
       prefer-token-info: false
       jwt:
         key-uri: http://paascloud-provider-uac:8000/oauth/token_key
-    authorization:
-      check-token-access: http://paascloud-gateway:7979/uac/oauth/check_token
 
 paascloud:
   enableSqlLogInterceptor: false
